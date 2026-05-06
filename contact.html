@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Novelle Interiors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html">Novelle</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="journey.html">Journey</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle neutral theme" data-theme-toggle>
+          <span class="theme-icon">◐</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero contact-hero">
+        <div class="page-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h1>Begin with a quieter room.</h1>
+          <p>Tell us about your space, timeline, and the feeling you want to create.</p>
+        </div>
+      </section>
+
+      <section class="contact-layout">
+        <form class="contact-form reveal" aria-label="Contact form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Project type
+            <select name="project">
+              <option>Residential interior design</option>
+              <option>Commercial space</option>
+              <option>Styling consultation</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Share a little about your space"></textarea>
+          </label>
+          <button class="button primary" type="submit">Send Inquiry</button>
+        </form>
+
+        <aside class="booking-panel reveal" id="booking">
+          <p class="eyebrow">Booking</p>
+          <h2>Private consultation</h2>
+          <p>
+            A 45-minute introductory call to discuss scope, atmosphere, budget, and the best design path for your
+            project.
+          </p>
+          <a class="button secondary" href="mailto:hello@novelleinteriors.com">hello@novelleinteriors.com</a>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Novelle Interiors</p>
+      <span>Calm luxury for considered spaces.</span>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

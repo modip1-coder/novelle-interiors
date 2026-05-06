@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journey | Novelle Interiors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html">Novelle</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="journey.html" aria-current="page">Journey</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle neutral theme" data-theme-toggle>
+          <span class="theme-icon">◐</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero journey-hero">
+        <div class="page-copy reveal">
+          <p class="eyebrow">Assignment process</p>
+          <h1>How this website came together.</h1>
+          <p>
+            This page explains the planning, design choices, and development steps behind the Novelle Interiors website.
+          </p>
+        </div>
+      </section>
+
+      <section class="section journey-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Project path</p>
+          <h2>From brief to finished website.</h2>
+        </div>
+
+        <div class="journey-grid">
+          <article class="journey-card reveal">
+            <span>01</span>
+            <h3>Understanding the Brief</h3>
+            <p>
+              The assignment asked for a modern luxury interior design website called Novelle Interiors. I identified
+              the required pages, features, visual direction, and responsive behavior before starting the layout.
+            </p>
+          </article>
+          <article class="journey-card reveal">
+            <span>02</span>
+            <h3>Choosing the Style</h3>
+            <p>
+              I used a warm neutral palette, elegant serif headings, clean sans-serif body text, large image-led
+              sections, soft shadows, and generous whitespace to create a calm premium feeling.
+            </p>
+          </article>
+          <article class="journey-card reveal">
+            <span>03</span>
+            <h3>Building the Structure</h3>
+            <p>
+              The website was built with separate HTML pages for Home, About, Services, Portfolio, Contact, and this
+              Journey page. A shared stylesheet and JavaScript file keep the code organized and reusable.
+            </p>
+          </article>
+          <article class="journey-card reveal">
+            <span>04</span>
+            <h3>Adding Interaction</h3>
+            <p>
+              JavaScript powers the sticky navigation effect, mobile menu, theme toggle, testimonial carousel, portfolio
+              filtering, expandable project details, and subtle scroll animations.
+            </p>
+          </article>
+          <article class="journey-card reveal">
+            <span>05</span>
+            <h3>Preparing for Deployment</h3>
+            <p>
+              The final files are static and ready for GitHub Pages. The most important deployment detail is keeping
+              index.html at the top level of the repository with the css and js folders beside it.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Novelle Interiors</p>
+      <span>Calm luxury for considered spaces.</span>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Novelle Interiors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html">Novelle</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="journey.html">Journey</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle neutral theme" data-theme-toggle>
+          <span class="theme-icon">◐</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero portfolio-hero">
+        <div class="page-copy reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Rooms composed with restraint and warmth.</h1>
+          <p>Explore selected residential and commercial spaces shaped by quiet luxury and everyday ease.</p>
+        </div>
+      </section>
+
+      <section class="section portfolio-section">
+        <div class="filter-bar reveal" aria-label="Portfolio categories">
+          <button type="button" class="filter active" data-filter="all">All</button>
+          <button type="button" class="filter" data-filter="living">Living Room</button>
+          <button type="button" class="filter" data-filter="bedroom">Bedroom</button>
+          <button type="button" class="filter" data-filter="office">Office</button>
+          <button type="button" class="filter" data-filter="dining">Dining</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-item reveal" data-category="living">
+            <button class="portfolio-thumb project-living" type="button" data-project="Maison Lumiere"></button>
+            <div class="portfolio-meta">
+              <p>Living Room</p>
+              <h2>Maison Lumiere</h2>
+              <div class="project-details">
+                Low lounge seating, linen sheers, and pale oak built-ins create a luminous gathering room.
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-item reveal" data-category="bedroom">
+            <button class="portfolio-thumb project-bedroom" type="button" data-project="The Soft Suite"></button>
+            <div class="portfolio-meta">
+              <p>Bedroom</p>
+              <h2>The Soft Suite</h2>
+              <div class="project-details">
+                Layered wool, matte plaster, and soft white millwork create a restorative private retreat.
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-item reveal" data-category="office">
+            <button class="portfolio-thumb project-office" type="button" data-project="Atelier Workroom"></button>
+            <div class="portfolio-meta">
+              <p>Office</p>
+              <h2>Atelier Workroom</h2>
+              <div class="project-details">
+                A quiet workspace with sculptural storage, warm task lighting, and gallery-like openness.
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-item reveal" data-category="dining">
+            <button class="portfolio-thumb project-dining" type="button" data-project="Nocturne Dining"></button>
+            <div class="portfolio-meta">
+              <p>Dining</p>
+              <h2>Nocturne Dining</h2>
+              <div class="project-details">
+                A softened dining room with stone, curved seating, and a calm palette for slow evenings.
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Novelle Interiors</p>
+      <span>Calm luxury for considered spaces.</span>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
